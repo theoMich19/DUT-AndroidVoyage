@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_app"
+    tools:context=".MesVoyages">
+
+    <!-- Card contenant un résumé d'un voyage -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="14dp"
+        android:layout_marginHorizontal="12dp"
+        app:cardCornerRadius="8dp">
+
+        <!-- Met en forme tout le contenu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Titre et date du voyage -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/main_color"
+                android:paddingHorizontal="@dimen/cardTitle_paddingHorizontal"
+                android:paddingBottom="@dimen/cardTitle_paddingBottom"
+                android:paddingTop="@dimen/cardTitle_paddingTop"
+                android:layout_marginBottom="@dimen/cardTitle_marginBottom">
+                    <TextView
+                        android:id="@+id/mes_voyages"
+                        style="@style/resume_entete"
+                        android:text="@string/mes_voyages"
+                        android:textSize="@dimen/titre_page" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvVoyageDate"
+                            style="@style/resume_entete"
+                            android:layout_weight="1"
+                            android:text="@string/voyageDate"
+                            android:textSize="@dimen/texte_petit_page"/>
+                        <TextView
+                            android:id="@+id/tvVoyageOrganise"
+                            style="@style/resume_entete"
+                            android:layout_gravity="end"
+                            android:text="@string/voyage_organise"
+                            android:textSize="@dimen/texte_petit_page"/>
+                    </LinearLayout>
+            </LinearLayout>
+
+            <!-- Trajets aller -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/cardBody_paddingHorizontal"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/resume_trajet"
+                        android:gravity="end"
+                        android:text="@string/aller"/>
+                    <View style="@style/resume_trajet_barre"/>
+                    <TextView
+                        android:id="@+id/tvVilleAller"
+                        style="@style/resume_trajet"
+                        android:gravity="start"
+                        android:text="@string/villeAller"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvTranspAller"
+                    style="@style/resume_transport"
+                    android:text="@string/transportAller"/>
+            </LinearLayout>
+
+            <!-- Hôtels et visites -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginVertical="12dp"
+                android:orientation="vertical"
+                android:minHeight="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvNbPays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/nbPays"/>
+                <TextView
+                    android:id="@+id/tvNbHotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/nbHotel"/>
+                <TextView
+                    android:id="@+id/tvNbVisite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/nbVisite"/>
+            </LinearLayout>
+
+            <!-- Trajets retour -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/resume_trajet"
+                        android:gravity="end"
+                        android:text="@string/retour"/>
+                    <View style="@style/resume_trajet_barre"/>
+                    <TextView
+                        android:id="@+id/tvVilleRetour"
+                        style="@style/resume_trajet"
+                        android:gravity="start"
+                        android:text="@string/villeRetour"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvTranspRetour"
+                    style="@style/resume_transport"
+                    android:text="@string/transportRetour"/>
+            </LinearLayout>
+
+            <!-- Les boutons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="8dp">
+
+                <Button
+                    android:id="@+id/btnDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/voir_les_details"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:paddingBottom="8dp"
+                    android:layout_gravity="end"
+                    android:backgroundTint="@color/bg_trash"
+                    android:drawableBottom="@drawable/ic_baseline_delete_24" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Message si aucun voyage n'a été chargé -->
+    <TextView
+        android:id="@+id/tvAucunVoyage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:text="@string/aucunVoyage"
+        android:textSize="@dimen/titre_page" />
+
+
+</LinearLayout>

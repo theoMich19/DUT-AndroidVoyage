@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titre_page">22sp</dimen>
+    <dimen name="texte_page">18sp</dimen>
+    <dimen name="texte_petit_page">16sp</dimen>
+    <dimen name="ville_largeur_min">90dp</dimen>
+    <dimen name="icon_min">36dp</dimen>
+
+    <!-- Voyage -->
+    <dimen name="cardTitle_paddingHorizontal">24dp</dimen>
+    <dimen name="cardTitle_paddingTop">11dp</dimen>
+    <dimen name="cardTitle_paddingBottom">6dp</dimen>
+    <dimen name="cardTitle_marginBottom">18dp</dimen>
+
+    <dimen name="cardBody_paddingHorizontal">30dp</dimen>
+</resources>

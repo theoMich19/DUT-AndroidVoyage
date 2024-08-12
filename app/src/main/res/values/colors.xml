@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="main_color">#006494</color>
+    <color name="main_variant_color">#0065B3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#022435</color>
+    <color name="light_grey">#F4F3F3</color>
+    <color name="dark_grey">#9A9A9A</color>
+    <color name="bg_trash">#535353</color>
+    <color name="bg_app">#f7f7f7</color>
+
+    <!-- Onglet détails -->
+    <color name="details_titre">#5C5C5C</color>
+</resources>

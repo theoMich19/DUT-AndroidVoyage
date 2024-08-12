@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_app">#252525</color>
+    <color name="main_color">#2356AE</color>
+    <color name="main_variant_color">#112C71</color>
+    <color name="white">#F3F3F3</color>
+
+    <!-- Onglet détails -->
+    <color name="details_titre">#E6E6E6</color>
+</resources>

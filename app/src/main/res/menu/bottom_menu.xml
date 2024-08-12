@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/accueil"
+        android:enabled="true"
+        android:title="@string/navigation_accueil_button"
+        android:icon="@drawable/ic_baseline_home_24" />
+
+    <item
+        android:id="@+id/mes_voyages"
+        android:enabled="true"
+        android:title="@string/navigation_mesVoyages_button"
+        android:icon="@drawable/ic_baseline_bookmark_24" />
+
+    <item
+        android:id="@+id/details"
+        android:enabled="true"
+        android:title="@string/navigation_details_button"
+        android:icon="@drawable/ic_baseline_view_list_24" />
+</menu>

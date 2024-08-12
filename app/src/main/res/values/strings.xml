@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Voyage Évasion</string>
+
+    <!-- Barre de navigation -->
+    <string name="navigation_accueil_button">Accueil</string>
+    <string name="navigation_mesVoyages_button"><b>Mon Voyage</b></string>
+    <string name="navigation_details_button">Détails</string>
+
+    <!-- page accueil -->
+    <string name="charger_un_voyage">Charger un voyage</string>
+    <string name="agence_evasion">Agence Évasion</string>
+    <string name="accueil">Accueil</string>
+    <string name="mes_voyages">Mon voyage</string>
+²
+    <!-- page Mon Voyage -->
+    <string name="nom">%s</string>
+    <string name="retour">Retour</string>
+    <string name="aller">Aller</string>
+    <string name="voyageDate">%s - %s</string>
+    <string name="nbPays">%d pays</string>
+    <string name="nbHotel">%d hôtel(s)</string>
+    <string name="nbVisite">%d visite(s)</string>
+    <string name="aucunVoyage">Aucun voyage chargé\nVeuillez charger un voyage sur la page d\'accueil</string>
+    <string name="voir_les_details">afficher les détails</string>
+    <string name="voyage_organise">Voyage organisé</string>
+
+    <!-- pages Détails -->
+    <string name="nomVoyage">Nom du voyage</string>
+    <string name="listePays">pays</string>
+    <string name="listeDate">Du %s au %s</string>
+    <string name="villeAller">villeAller</string>
+    <string name="villeRetour">villeRetour</string>
+    <string name="titlePays">Pays</string>
+    <string name="titleHotel">Hôtels</string>
+    <string name="titleVisite">Visites</string>
+    <string name="titleTarif">Plages de tarifs</string>
+    <string name="titleVille">Villes</string>
+    <string name="transportAller">%s</string>
+    <string name="transportRetour">%s</string>
+    <string name="listeTarif">tarifs</string>
+    <string name="liste_element">\t\u2022 %s</string>
+
+    <!-- AlertDialog -->
+    <string name="attention_titre">Attention</string>
+    <string name="info_titre">Information</string>
+    <string name="attention_message">Vous vous apprêtez à supprimer le voyage \"%s\" de l\'application.</string>
+    <string name="info_message">Vous pouvez cliquer sur le nom de l\'hôtel, du pays ou de la visite pour plus de détails</string>
+    <string name="annuler">Annuler</string>
+    <string name="fermer">Fermer</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="permStockage">Accepter l\'utilisation du stockage :\nRendez-vous dans les paramètres de votre téléphone.</string>
+    <string name="titrePermStockage">Permissions nécessaires</string>
+    <string name="msgVoyageDejaCharge">Un voyage est déjà chargé dans l\'application.\nVoulez-vous en choisir un nouveau ?</string>
+    <string name="voyage_supprime">Le voyage a été supprimé</string>
+
+</resources>

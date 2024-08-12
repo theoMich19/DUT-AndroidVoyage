@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/accueil">
+
+    <fragment
+        android:id="@+id/accueil"
+        android:name="td.android.voyageevasion.Accueil"
+        android:label="fragment_accueil"
+        tools:layout="@layout/fragment_accueil" />
+    <fragment
+        android:id="@+id/enregistre"
+        android:name="td.android.voyageevasion.MesVoyages"
+        android:label="fragment_enregistre"
+        tools:layout="@layout/fragment_mes_voyages" />
+    <fragment
+        android:id="@+id/details"
+        android:name="td.android.voyageevasion.Details"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details"/>
+
+</navigation>
